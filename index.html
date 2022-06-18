@@ -1,23 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>WEB1 - Welcome</title>
-  <meta charset="utf-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="colors.js"></script>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="멍kit리스트">
+    <meta property="og:description" content="댕댕이 생일파티 용품">
+    <meta property="og:image" content="logo.jpg">
+    <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
+    <title>멍kit리스트</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard",serif;
+        }
+       body {
+        background-color: #44398A;
+       }
+       .profile {
+        width: 200px;
+        height: 200px;
+
+        border-radius: 100%;
+        border: 2px solid white;
+
+        background-image: url(logo.jpg);
+        background-position: center;
+        background-size: cover;
+       }
+       .main{
+        color: white;
+        font-size: 20px;
+
+        margin-top: 30px;
+        margin-bottom: 10px;
+       }
+       .sub{
+        color: white;
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+       }
+       .wrap{
+        width: 300px;
+        margin: 30px auto 0px auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .wrap > a {
+        width: 300px;
+        height: 50px;
+
+        background-color: white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+
+        font-size: 14px;
+        font-weight: bold;
+        color: #44398A;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+
+        box-shadow: 3px 3px 5px 0px black;
+       }
+       .wrap > a:hover {
+        background-color: #f2f2f2;
+        font-size: 20px;
+       }
+       
+    </style>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <input id="night_day" type="button" value="night" onclick="
-    nightDayHandler(this);
-  ">
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <h2>WEB</h2>
-  <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
-  </p>
+    <div class="wrap">
+   <div class="profile"></div>
+   <h1 class="main">멍kit리스트</h1>
+   <p class="sub">댕댕이 생일파티 용품</p>
+   <a target="_blank" href="https://sell.smartstore.naver.com/#/home/about">스마트스토어</a>
+    <a target="_blank" href="www.instagram.com">인스타그램</a>
+    <a target="_blank" href="https://aged-radio-00c.notion.site/KIT-6541dab016b84e398f01a0c23f22d57d">구성품 안내</a>
+    </div>
 </body>
 </html>
